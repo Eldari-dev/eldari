@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
@@ -16,9 +16,10 @@ body {
   max-width: 800px;
   margin: 0 auto;
   background: #fff;
-  padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 3rem 2.5rem;
+  border: 1px solid #e0e0e0;
 }
 
 header {
@@ -27,7 +28,9 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  letter-spacing: -1px;
+  font-weight: 700;
   color: #1a1a1a;
 }
 
@@ -38,24 +41,26 @@ header p {
 }
 
 a {
-  color: #007acc;
-  text-decoration: none;
+  color: var(--accent);
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #e55b00;
 }
 
 section {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
 
 section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  border-bottom: 2px solid #007acc;
-  display: inline-block;
-  padding-bottom: 0.2rem;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 ul {
